@@ -7,7 +7,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -21,14 +20,15 @@ header {
 
 article {
     display: flex;
-    justify-content: space-between;
     width: 85%;
+    gap: 10rem;
 }
 
 #left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 2;
     gap: 4rem;
 }
 
@@ -43,13 +43,58 @@ article {
 
 .grid-item {
     align-items: center;
-    background-color: #ccc;
-    border: 1px solid #333;
     display: flex;
+    gap: 1rem;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
 }
-.grid-item p:hover {
-    font-size: 18px;
+.grid-item:hover img {
+    width: 65%;
+}
+
+.img_food {
+    width: 60%;
+    transition: 0.3s ease;
+}
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex: 2;
+}
+
+#p-payment-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#p-infoshop {
+    font-size: 20px;
+}
+
+#p-totalShopping {
+    font-size: 5rem;
+    color: #32c036;
+}
+
+#btn-caixa {
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+#btn-caixa:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
 }

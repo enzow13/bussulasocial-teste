@@ -18,39 +18,39 @@
                 <h2>Prateleira</h2>
                 <div id="div-shop-grid">
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('0')" class="img_food" src="/site/imgs/food1.png" alt="Alimento 1">
                         <p id="1">R$0,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('1')" class="img_food" src="/site/imgs/food2.png" alt="Alimento 2">
                         <p id="2">R$1,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('2')" class="img_food" src="/site/imgs/food3.png" alt="Alimento 3">
                         <p id="3">R$2,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('3')" class="img_food" src="/site/imgs/food4.png" alt="Alimento 4">
                         <p id="4">R$3,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('4')" class="img_food" src="/site/imgs/food5.png" alt="Alimento 5">
                         <p id="5">R$4,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('5')" class="img_food" src="/site/imgs/food6.png" alt="Alimento 6">
                         <p id="6">R$2,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('6')" class="img_food" src="/site/imgs/food7.png" alt="Alimento 7">
                         <p id="7">R$21,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('7')" class="img_food" src="/site/imgs/food8.png" alt="Alimento 8">
                         <p id="8">R$39,99</p>
                     </div>
                     <div class="grid-item">
-                        <img src="" alt="">
+                        <img onclick="buyItem('8')" class="img_food" src="/site/imgs/food9.png" alt="Alimento 9">
                         <p id="9">R$51,99</p>
                     </div>
                 </div>
@@ -58,10 +58,15 @@
             <section id="right-side">
                 <h2>Pagamento</h2>
                 <div id="div-pagamento"></div>
+                <div id="p-payment-info">
+                    <p id=p-infoshop>Seu carrinho está no valor de:</p>
+                    <p id="p-totalShopping">R$ 0</p>
+                </div>
+                <button id="btn-caixa">Seguir para Pagamento</button>
             </section>
         </article>
     </main>
-    <script type="module" src="/prateleira.mjs"></script>
-    <script src="/app.js"></script>
+    <script type="module" src="/prateleira.js"></script>
+    <script type="module" src="/app.js"></script>
 </body>
 </html>
