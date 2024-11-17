@@ -66,7 +66,7 @@ function checkCredito() {
         case "credito-vista":
             info_credit.style.display = "flex";
             form_parcela.style.display = "none";
-            document.getElementById("p-valor-a-pagar").innerHTML = `Total a pagar: R$ ${carrinho}`;
+            document.getElementById("p-valor-a-pagar").innerHTML = `Total a pagar: R$ ${carrinho.toFixed(2)}`;
             document.getElementById("select-parcelas").value = ""
             break
         case "credito-parcelado":
