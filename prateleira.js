@@ -5,63 +5,63 @@ export const prateleira =
         {
             "id": 1,
             "atributos": {
-                "nome": "Alimento1",
+                "nome": "Banana",
                 "price": 0.99
             }
         },
         {
             "id": 2,
             "atributos": {
-                "nome": "Alimento2",
+                "nome": "Cereja",
                 "price": 1.99
             }
         },
         {
             "id": 3,
             "atributos": {
-                "nome": "Alimento3",
+                "nome": "Melancia",
                 "price": 2.99
             }
         },
         {
             "id": 4,
             "atributos": {
-                "nome": "Alimento4",
+                "nome": "Ovo",
                 "price": 3.99
             }
         },
         {
             "id": 5,
             "atributos": {
-                "nome": "Alimento5",
+                "nome": "Queijo Mussarela",
                 "price": 4.99
             }
         },
         {
             "id": 6,
             "atributos": {
-                "nome": "Alimento6",
+                "nome": "Morango",
                 "price": 2.99
             }
         },
         {
             "id": 7,
             "atributos": {
-                "nome": "Alimento7",
+                "nome": "Salmão",
                 "price": 21.99
             }
         },
         {
             "id": 8,
             "atributos": {
-                "nome": "Alimento8",
+                "nome": "Frango",
                 "price": 39.99
             }
         },
         {
             "id": 9,
             "atributos": {
-                "nome": "Alimento9",
+                "nome": "Hamburguer",
                 "price": 51.99
             }
         }

@@ -68,14 +68,57 @@
         <article id="article-down">
             <section id="section-payment">
                 <h2>Pagamento</h2>
-                <form id="form-payment" action="">
-                    <label for="metodo-pagamento">Método de Pagamento</label>
-                    <select name="select-pagamento" id="select-pagamento">
+                <form id="form-payment">
+                    <label for="metodo-pagamento">Método de Pagamento:</label>
+                    <select onchange="checkCredito()" id="select-pagamento">
                         <option value="pix">Pix (pagamento à vista)</option>
                         <option value="credito-vista">Cartão de Crédito à Vista (1x)</option>
                         <option value="credito-parcelado">Cartão de Crédito Parcelado (de 2 a 12 parcelas)</option>
                     </select>
+                    <div id="form-parcelas">
+                        <label for="num-parcelas">Selecione quantas parcelas:</label>
+                        <select onchange="calcParcela()" name="select-parcelas" id="select-parcelas">
+                            <option value="" selected disabled></option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div id="div-credit-info">
+                        <label>Nome do titular do cartão</label>
+                        <input required class="input-card-info" id="input-titular" oninput="validarSeLetra(this)" type="text">
+                        <label>Número do cartão de crédito</label>
+                        <input required class="input-card-info" id="input-num-cartao" type="text" maxlength="19" oninput="formatacaoCartao(this)">
+                        <label>Data de validade do cartão</label>
+                        <input required class="input-card-info" id="input-val" type="month" min="2024-11" max="2030-12">
+                        <label>Código de segurança (CVV)</label>
+                        <input required class="input-card-info" id="input-cvv" type="text" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    </div>
                 </form>
+                    <p id="p-valor-a-pagar"></p>
+                    <button type="submit" id="btn-pay" onclick="validateForm()">Pagar</button>
+            </section>
+            <section id="section-products">
+                <h2>Carrinho</h2>
+                <div id="div-listagem-produtos">
+                    <div id="div-listagem-produto">
+                        <h3>Produto</h3>
+                    </div>
+                    <div id="div-listagem-preco">
+                        <h3>Preço</h3>
+                    </div>
+                    <div id="div-listagem-qntd">
+                        <h3>Quantidade</h3>
+                    </div>
+                </div>
             </section>
         </article>
     </main>

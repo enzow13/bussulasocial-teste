@@ -99,3 +99,89 @@ header {
     color: rgb(255, 255, 255);
     background-color: #131313;
 }
+
+#article-down {
+    width: 85%;
+    gap: 10rem;
+    opacity: 0;
+    display: none;
+    transition: 0.8s;
+}
+
+#section-payment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+    gap: 2rem;
+}
+
+#section-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+}
+
+#form-payment {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#select-pagamento {
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #131313;
+}
+
+#btn-pay {
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    color: #131313;
+    border: 1px solid #131313;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#btn-pay:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid #32c036;
+    background-color: #32c036;
+}
+
+#form-parcelas {
+    flex-direction: column;
+    gap: .5rem;
+    display: none;
+}
+
+#select-parcelas {
+    width: 20%;
+}
+
+#div-credit-info {
+    flex-direction: column;
+    gap: .5rem;
+    display: none;
+}
+
+.input-card-info {
+    padding: 5px;
+    border: 1px solid #131313;
+    border-radius: 7px;
+}
+
+#div-listagem-produtos {
+    display: flex;
+    gap: 5rem;
+}
+
+.product-list {
+    color: #131313;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
