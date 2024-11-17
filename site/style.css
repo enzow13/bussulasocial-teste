@@ -8,6 +8,7 @@ main {
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    color: #131313;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     padding-bottom: 40px;
 }
 
-article {
+#article-up {
     display: flex;
     width: 85%;
     gap: 10rem;
@@ -86,15 +87,15 @@ article {
 
 #btn-caixa {
     padding: 12px 20px 12px 20px;
-    border: 1px solid #000000;
+    border: 1px solid #131313;
     font-size: 1rem;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
-    color: rgb(0, 0, 0);
+    color: #131313;
     transition: 0.3s;
 }
 #btn-caixa:hover {
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #131313;
 }

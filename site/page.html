@@ -13,7 +13,7 @@
         <header>
             <h1>Mercado - Bússula Social</h1>
         </header>
-        <article>
+        <article id="article-up">
             <section id="left-side">
                 <h2>Prateleira</h2>
                 <div id="div-shop-grid">
@@ -62,7 +62,20 @@
                     <p id=p-infoshop>Seu carrinho está no valor de:</p>
                     <p id="p-totalShopping">R$ 0</p>
                 </div>
-                <button id="btn-caixa">Seguir para Pagamento</button>
+                <button onclick="goToPayment()" id="btn-caixa">Seguir para Pagamento</button>
+            </section>
+        </article>
+        <article id="article-down">
+            <section id="section-payment">
+                <h2>Pagamento</h2>
+                <form id="form-payment" action="">
+                    <label for="metodo-pagamento">Método de Pagamento</label>
+                    <select name="select-pagamento" id="select-pagamento">
+                        <option value="pix">Pix (pagamento à vista)</option>
+                        <option value="credito-vista">Cartão de Crédito à Vista (1x)</option>
+                        <option value="credito-parcelado">Cartão de Crédito Parcelado (de 2 a 12 parcelas)</option>
+                    </select>
+                </form>
             </section>
         </article>
     </main>
